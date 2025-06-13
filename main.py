@@ -68,4 +68,5 @@ async def give_present(present):
         "キャンディー1年分",
         "クッキー"
     ]
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しは{present_list[random.randrange(10)]}です。"}  # f文字列というPythonの機能を使っている
+    ind = len(present)
+    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しは{present_list[ind]}です。"}  # f文字列というPythonの機能を使っている
