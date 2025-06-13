@@ -41,10 +41,14 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <meta charset="UTF-8">
+            <title>Pythonよくわからない</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1 style="color: #ffffff; background-color: #8888ff;">Pythonよくわからない</h1>
+            <p style="color: #ffff00">がんばります</p>
+            <h2 style="color: #ff0000; background-color: #00ff00;">HTMLもよくわからない</h2>
+            <p style="color: #ff00ff">がんばります</p>
         </body>
     </html>
     """
