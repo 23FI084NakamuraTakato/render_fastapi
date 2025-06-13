@@ -52,4 +52,16 @@ def index():
     
 @app.post("/present")
 async def give_present(present):
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}  # f文字列というPythonの機能を使っている
+    present_list = [
+        "Switch2",
+        "Switch2台",
+        "3DS",
+        "2DS",
+        "DSLite",
+        "プレステ5",
+        "プレステ4",
+        "PSP",
+        "キャンディー1年分",
+        "クッキー"
+    ]
+    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しは{present_list[random.randrange(10)]}です。"}  # f文字列というPythonの機能を使っている
